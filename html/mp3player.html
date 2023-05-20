@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> Free for Gowtham
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/mp3player.css">
+</head>
+<body>
+    <section class="container">
+        <article>
+            <span>JIO SAAVN - Premium for ₹299</span>
+            <span><input onchange="data()" class="input" type="text" placeholder="search Artists,Songs,Albums"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </article>
+    </section>
+    
+    <section class="all">
+        <button value="all" class="eyybidda" onclick="mainfunction(event)" >All</button>
+        <button value="Trending songs" class="eyybidda" onclick="mainfunction(event)" >Trending songs</button>
+        <button value="new songs" class="eyybidda" onclick="mainfunction(event)" >New songs</button>
+        <button value="old songs" class="eyybidda" onclick="mainfunction(event)" >Old songs</button>
+        <button value="Album" class="eyybidda" onclick="mainfunction(event)" >Album</button>
+        <button value="Radio" class="eyybidda" onclick="mainfunction(event)" >Radio</button>
+        <button value="podcast" class="eyybidda" onclick="mainfunction(event)" >Podcast</button>
+        <button value="old songs" class="eyybidda" onclick="mainfunction(event)" >Moods&genres<ion-icon name="chevron-down-outline"></ion-icon></button>
+        <button value="my music" class="eyybidda" onclick="mainfunction(event)" >My Music</button>
+    </section>
+   
+    <section class="divcenter">
+        <div class="list"></div>
+        <div class="songimg">
+            <img class="currentsongimg" src="https://media.istockphoto.com/id/1175435360/vector/music-note-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=R7s6RR849L57bv_c7jMIFRW4H87-FjLB8sqZ08mN0OU=" alt="">
+        </div>
+    </section>
+    
+    <div class="trend">
+        <audio class="audio" id="audiotag" controls autoplay></audio>
+    </div>
+    <!-- <div class="btns">
+        <button class="prevbtn" onclick="prevtrack()"><ion-icon name="play-skip-back-circle-outline"></ion-icon></button>
+        <button class="papbtn"><ion-icon name="play-skip-forward-outline"></ion-icon></button>
+        <button class="nxtbtn" onclick="nexttrack()"><ion-icon name="play-skip-forward-circle-outline"></ion-icon></button>
+    </div> -->
+</body>
+<script src="../js/mp3player.js"></script>
+</html>
